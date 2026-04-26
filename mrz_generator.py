@@ -67,15 +67,15 @@ def make_mrz(
 
 if __name__ == "__main__":
     line1, line2 = make_mrz(
-        surname="TEST",
-        given_names="MARK",
-        passport_no="KE1234567",
+        surname="WILNER",
+        given_names="ERIC",
+        passport_no="KE0425848",
         nationality="EST",
-        dob="950516",        # 16.05.1995 → YYMMDD
+        dob="950416",        # 16.04.1995 → YYMMDD
         sex="M",
         expiry="280613",     # 13.06.2028 → YYMMDD
         issuing_country="EST",
-        personal_no="39505165587",
+        personal_no="39505165132",
     )
 
     print("MRZ (ICAO 9303 TD3 — Estonian passport):")
