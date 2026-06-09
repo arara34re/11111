@@ -70,3 +70,35 @@ Check digit = (weighted sum) mod 10.
 ```bash
 python3 mrz_generator.py
 ```
+
+---
+
+## Work/break timer utility
+
+This repository also includes a small terminal timer for a 50 minute work / 10 minute break rhythm.
+
+Run one default cycle:
+
+```bash
+python3 work_break_timer.py
+```
+
+Run four cycles:
+
+```bash
+python3 work_break_timer.py --cycles 4
+```
+
+Repeat until you stop it with `Ctrl+C`:
+
+```bash
+python3 work_break_timer.py --repeat
+```
+
+Useful options:
+
+```bash
+python3 work_break_timer.py --work 45 --break 15 --cycles 3
+python3 work_break_timer.py --notify
+python3 work_break_timer.py --dry-run
+```
